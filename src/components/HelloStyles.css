@@ -1,0 +1,54 @@
+.mask{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.HelloImg{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;  
+}
+
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+.hello{
+    width: 100%;
+    height: 100%;
+}
+
+.hello .content{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.hello .content h1{
+  font-size: 3rem;
+  padding: 0.6rem 0 1.5rem;
+}
+
+.hello .content p{
+    font-size: 1.5rem;
+    font-weight: 250;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.content .btn{
+    margin: 2rem 0.2rem;
+}
+
